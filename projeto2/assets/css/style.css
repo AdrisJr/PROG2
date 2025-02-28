@@ -1,10 +1,22 @@
-h1{
-    color:coral;
-    font-size:40px
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+html, body{
+    margin: 0;
+    border: 0;
 }
-.header{
-    background-color: blue;
+h1{
+    color:green;
 }
 #header{
     text-align: center;
+}
+h1{
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+.header h1{
+    font-size: 40px;
+    font-weight: bolder;
+    color: black
 }
