@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
 html, body{
     margin: 0;
     border: 0;
@@ -91,5 +92,58 @@ h1{
     border-radius: 50% 0;
     rotate: 5deg;
 }
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: lightblue;
+    color: #000;
+    box-shadow: 4px 4px 1px #333;
+}
+.navbar a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.lista{
+    list-style: none;
+    display: flex;
+}
+.lista li a:hover{
+    transition: all .8s;
+    color: orange;
+    letter-spacing: 3px;
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
 
+    .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #botao:checked ~ .menu {
+        height: auto;
+        max-height: 500px; /* Define um limite máximo para evitar expansões infinitas */
+    }
+}
 
