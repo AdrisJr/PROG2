@@ -86,3 +86,327 @@ body{
     padding-left: 100px;
     font-size: 40px;
 }
+.imageCarousel{
+    height: 100vh;
+    object-fit: cover;
+}
+.carousel-item {
+    height: 100vh;
+}
+.carousel-caption {
+    background-color: #000000a0;
+    color: #FF5F00; 
+    padding: 1rem;
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.bannerHero{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-image: url('../img/bannerHero.png');
+    background-size: cover;
+    background-position: center;    
+    color: white;
+    height: 100vh;
+}
+.hero-text{
+    font-family: "Poppins", sans-serif;
+}
+.hero-text > h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    padding-left: 80px;
+}
+.hero-text > p, .hero-text > a{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 50px;
+}
+.hero-text > a{
+    text-decoration: none;
+    color: #FF5F00;
+    margin-left: 50px;
+    padding: 10px;
+    border-radius: 45px;
+    border: 1px solid #FF5F00;
+    background-color: white;
+}
+.hero-text > a:hover{
+    background-color: #FF5F00;
+    color: white;
+    transition: 0.2s;
+    border: 1px solid white;
+}
+.cartao{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.cartao:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.cartao > img{
+    min-width: 50%;
+}
+.cartao > div{
+    min-width: 50%;
+    padding: 50px;    
+}
+.cartao a{
+    text-decoration: none;
+    color: #FF5F00;
+}
+.cartao a:hover{
+    transition: 0.5s;
+    text-decoration: underline;
+    color: #FF5F00;
+}
+section h2{
+    font-family: "Poppins", sans-serif;
+    margin: 30px 0 0 50px;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-direction: row;
+}
+#contato{
+    background-color: #141413;
+    color: white;
+    padding: 50px 50px 10px 50px;
+}
+#contato p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 30px;
+    font-style: normal;
+    text-align: center;
+}
+.footer i:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+.footer input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+footer button{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF5F00;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+.footer button:hover{
+    background-color: white;
+    color: #FF5F00;
+    transition: 0.2s;
+}  
+.footer label{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+.footer i{
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+}
+.menu-toggle {
+    display: none;
+  }  
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 30px;
+ }  
+.close-btn {
+    font-size: 30px;
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    display: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+}
+  
+@media (max-width: 768px) {
+    .hamburger {
+      display: block;
+      top: 15px;
+      right: 30px;
+    }
+    .logo{
+        padding: 17px;
+    }
+    .bannerHero{
+        height: 100vh;
+        background-image: url('../img/bannerHero.png');
+        background-size: cover;
+        background-position: center;    
+        color: white;
+    }
+    .hero-text{
+        font-family: "Poppins", sans-serif;
+        padding-left: 20px;
+    }
+    .hero-text > h1{
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        padding-left: 20px;
+    }    
+    .hero-text > p, .hero-text > a{
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        padding-left: 20px;
+    }
+    .hero-text > a{
+        text-decoration: none;
+        color: #FF5F00;
+        margin-left: 20px;
+        padding: 10px;
+        border-radius: 45px;
+        border: 1px solid #FF5F00;
+        background-color: white;
+    }
+    .hero-text > a:hover{
+        background-color: #FF5F00;
+        color: white;
+        transition: 0.2s;
+        border: 1px solid white;
+    }
+    .cartao:nth-child(odd){
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartao{
+        border: 1px solid #FF5F0033;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cartao > img{
+        max-width: 50px;
+    }
+    .cartao > div{
+        min-width: 100%;
+        padding: 20px;    
+    }
+    .cartao a{
+        text-decoration: none;
+        color: #FF5F00;
+    }
+    #contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }    
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        flex-direction: column;
+    }
+    .footer > form{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer > div{
+        margin-top: 20px;
+    }
+    .mobile-menu-container {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: #141413;
+      transition: right 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      padding-top: 40px;
+    }
+    
+    .nav-links li {
+      margin: 15px 0;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .nav-links a {
+      display: block;
+      padding: 15px;
+      width: 100%;
+    }
+    
+    .menu-toggle:checked ~ .mobile-menu-container {
+      right: 0;
+    }    
+    .menu-toggle:checked ~ .hamburger {
+      display: none;
+    }
+    
+    .menu-toggle:checked ~ .mobile-menu-container .close-btn {
+      display: block;
+    }
+    .menunavbar {
+      justify-content: space-between;
+      padding: 15px;
+      position: relative;
+    }
+    .logo img {
+      max-width: 120px;
+    }
+    .menunavbar ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    
+    }
+}
+
+  

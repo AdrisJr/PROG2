@@ -4,41 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/bootstrap/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap/css/bootstrap.min.css"> 
     <link rel="icon" href="assets/img/logo.svg">
     <title>Master Card - Benefícios para o Dia a Dia</title>
 </head>
 <body>
     <nav class="menunavbar">
-        <div class="logo">
-            <img src="assets/img/logo.svg" alt="Logo MasterCard">
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="beneficios.html">Benefícios</a></li>
-            <li><a href="cartao.html">Cartão</a></li>
-            <li><a href="contato.html">Contato</a></li>
+      <div class="logo">
+        <img src="assets/img/logo.svg" alt="Logo MasterCard">
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </label>
+      
+      <div class="mobile-menu-container">
+        <label for="menu-toggle" class="close-btn">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#bannerHero">Home</a></li>
+          <li><a href="#carrosel">Benefícios</a></li>
+          <li><a href="#cartao">Cartão</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
+      </div>
     </nav>
+  
     <main>
-        <div class="banner">
-            <section >
-                <h1>Benefícios do Cartão MasterCard e Vantagens</h1>
-                <ul>
-                    <li>Descontos em lojas parceiras</li>
-                    <li>Proteção de preço</li>
-                    <li>Assistência em viagens</li>
-                    <li>Ofertas exclusivas</li>
-                </ul>
-            </section>
-        </div>
-
-        <section>
-            <h2>Como Solicitar</h2>
-            <p>Para solicitar seu cartão, acesse nosso site e preencha o formulário de solicitação.</p>
+        <section id="bannerHero" class="bannerHero">
+            <div class="hero-text">
+                <h1>Master Card</h1>
+                <p>Seu estilo, seus benefícios. Feito para você.</p>
+                <a href="https://www.mastercard.com.br/content/mastercardcom/br/pt.html" target="_blank">Saiba Mais</a>
+            </div>
         </section>
-
-        <footer>
-            <p>&copy; 2023 MasterCard. Todos os direitos reservados.</p>
+        <section id="carrosel" class="carrosel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"  >
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/projeto3/assets/img/beneficiosBackground.jpg" class="d-block w-100 imageCarousel" alt="...">
+                    <div class="carousel-caption d-block">
+                      <h5>Benefícios e Ofertas Exclusivas</h5>
+                      <p><strong>Descontos, cashback e acesso a experiências únicas.</strong> Clientes Mastercard podem aproveitar promoções especiais em parceiros utilizando Mastercard Surpreenda.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item imageCarousel">
+                    <img src="/projeto3/assets/img/rioDeJaneiroAereo.jpg" class="d-block w-100 imageCarousel" alt="...">
+                    <div class="carousel-caption d-block">
+                      <h5>Tecnologia e Segurança Avançada</h5>
+                      <p><strong>Compras protegidas com Autenticação.</strong> tranquilidade com sistemas de segurança como o Mastercard SecureCode.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item imageCarousel">
+                    <img src="/projeto3/assets/img/assistenciaEmViagens.jpg" class="d-block w-100 imageCarousel" alt="...">
+                    <div class="carousel-caption d-block">
+                      <h5>Aceitação Global</h5>
+                      <p><strong>Use seu Mastercard em milhões de estabelecimentos ao redor do mundo.</strong> Perfeito para quem viaja ou faz compras internacionais.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section id="cartao">
+            <h2>Cartões</h2>
+            <div class="cartao">
+              <img src="./assets/img/masterCardBlack.jpg" alt="master card black">
+              <div>
+                <h3>Mastercard Black<sup>TM</sup></h3>
+                <p>Aproveite melhor o seu tempo para explorar o mundo e viver experiências exclusivas que não tem preço</p>
+                <a target="_blank" href="https://www.mastercard.com.br/pt-br/consumidores/encontre-seu-cartao/cartoes-credito/mastercard-black.html">Saiba Mais</a>
+              </div>
+            </div> 
+            <div class="cartao">
+              <img src="./assets/img/masterCardPlatinum.jpg" alt="master card platinum">
+              <div>
+                <h3>Mastercard Platinum</h3>
+                <p>Liberdade para experimentar lugares e ter acesso a benefícios e serviços exclusivos</p>
+                <a target="_blank" href="https://www.mastercard.com.br/pt-br/consumidores/encontre-seu-cartao/cartoes-credito/mastercard-platinum.html">Saiba Mais</a>
+               </div>   
+            </div>
+            <div class="cartao">
+              <img src="./assets/img/masterCardGold.jpg" alt="master card gold">
+              <div>
+                <h3>Mastercard Gold</h3>
+                <p>Poder de compra no mundo todo, além de acesso a beneficios exclusivos</p>
+                <a target="_blank" href="https://www.mastercard.com.br/pt-br/consumidores/encontre-seu-cartao/cartoes-credito/mastercard-gold.html">Saiba Mais</a>                
+              </div>
+            </div>
+            <div class="cartao">
+              <img src="./assets/img/masterCardStandard.jpg" alt="master card standard">
+              <div>
+                <h3>Mastercard Standard</h3>
+                <p>Para compras diárias e muito mais</p>
+                <a target="_blank" href="https://www.mastercard.com.br/pt-br/consumidores/encontre-seu-cartao/cartoes-credito/mastercard-standard.html">Saiba Mais</a>                
+              </div>
+            </div>
+            <div class="cartao">
+              <img src="./assets/img/masterCardDebito.jpg" alt="master card debito">
+              <div>
+                <h3>Mastercard Debito</h3>
+                <p>Aproveite o que há de mais atual em termos de praticidade e controle financeiro ao combinar aceitação mundial e benefícios dos cartões Mastercard com débito direto em sua conta bancária</p>
+                <a target="_blank" href="https://www.mastercard.com.br/pt-br/consumidores/encontre-seu-cartao/cartoes-debito.html">Saiba Mais</a>                
+              </div>
+            </div>
+            <div class="cartao">
+              <img src="./assets/img/masterCardPrepago.jpg" alt="master card pre pago">
+              <div>
+                <h3>Mastercard Pré-Pago</h3>
+                <p>Use cartões pré-pagos Mastercard em qualquer lugar que a marca já é aceita. Basta carregar um cartão pré-pago e usá-lo em qualquer transação, compras, pagamentos de contas ou despesas diárias.</p>
+                <a target="_blank" href="https://www.mastercard.com.br/pt-br/consumidores/encontre-seu-cartao/cartoes-prepago.html">Saiba Mais</a>                
+              </div>
+            </div>
+        </section>
+        <footer id="contato">
+          <div class="footer">
+            <form action="" method="get">
+              <label for="email">Inscreva-se para receber novidades e ofertas exclusivas:</label>
+              <input type="email" placeholder="Digite seu e-mail" required>
+              <button type="submit">Inscreva-se</button>
+            </form>
+            <div>
+              <a target="_blank" href="http://www.linkedin.com/company/mastercard"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.facebook.com/MastercardBrasil"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.instagram.com/mastercardbrasil/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a target="_blank" href="https://www.youtube.com/user/MasterCardBrasil"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p>&copy; 1994-2025 Mastercard. </p>
+          </div>            
         </footer>
 
     </main>
